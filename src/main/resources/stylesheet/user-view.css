@@ -1,0 +1,26 @@
+.root {
+    -fx-font-family: Poppins;
+    -fx-background-color: #F6F1E9;
+}
+
+.label {
+    -fx-font-family: Poppins;
+}
+
+.button {
+    -fx-background-color: #4F200D;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-text-fill: #D3D3D3;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #D3D3D3;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}

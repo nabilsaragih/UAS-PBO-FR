@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas_pbo_fr.Main">
+   <children>
+      <VBox fx:id="vbMain" prefHeight="768.0" prefWidth="275.0">
+         <children>
+            <Pane fx:id="panel1" prefHeight="78.0" prefWidth="275.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="275.0">
+                     <children>
+                        <Label text="Tambah Data">
+                           <font>
+                              <Font name="Poppins Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="panel2" prefHeight="78.0" prefWidth="275.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="275.0">
+                     <children>
+                        <Label text="Lihat Data">
+                           <font>
+                              <Font name="Poppins Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="panel3" prefHeight="78.0" prefWidth="275.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="275.0">
+                     <children>
+                        <Label text="Ubah Data">
+                           <font>
+                              <Font name="Poppins Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="panel4" prefHeight="78.0" prefWidth="275.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="275.0">
+                     <children>
+                        <Label text="Hapus Data">
+                           <font>
+                              <Font name="Poppins Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="panel5" prefHeight="78.0" prefWidth="275.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="275.0">
+                     <children>
+                        <Label text="Tentang Kami">
+                           <font>
+                              <Font name="Poppins Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="378.0" prefWidth="275.0" />
+         </children>
+      </VBox>
+      <Pane fx:id="paneTambah" layoutX="275.0" prefHeight="768.0" prefWidth="1091.0">
+         <children>
+            <VBox layoutX="30.0" layoutY="30.0" prefHeight="486.0" prefWidth="740.0" spacing="5.0">
+               <children>
+                  <Label text="Nama Produk">
+                     <font>
+                        <Font name="Poppins Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tambahTxtNamaProduk" promptText="Masukkan nama produk" />
+                  <Label text="Jenis Produk">
+                     <font>
+                        <Font name="Poppins Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="tambahCbJenisProduk" prefHeight="26.0" prefWidth="740.0" />
+                  <Label text="Mutu Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="740.0" spacing="30.0">
+                     <children>
+                        <RadioButton fx:id="tambahRbIndustrial" mnemonicParsing="false" text="Industrial Grade" />
+                        <RadioButton fx:id="tambahRbFood" mnemonicParsing="false" text="Food Additive" />
+                        <RadioButton fx:id="tambahRbPharma" mnemonicParsing="false" text="Pharmaceutical Standard" />
+                        <RadioButton fx:id="tambahRbFeed" mnemonicParsing="false" text="Feed Additive" />
+                     </children>
+                  </HBox>
+                  <Label text="Tanggal Produksi">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tambahDtProduksi" prefWidth="740.0" promptText="Pilih tanggal produksi produk" />
+                  <Label text="Tanggal Expired">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tambahDtExpired" prefWidth="740.0" promptText="PIlih tanggal expired produk" />
+               </children>
+            </VBox>
+            <TableView fx:id="tambahTblViewProduk" layoutX="30.0" layoutY="516.0" prefHeight="223.0" prefWidth="1032.0">
+              <columns>
+                  <TableColumn fx:id="tambahColIDProduk" prefWidth="75.0" text="ID Produk" />
+                <TableColumn fx:id="tambahColNamaProduk" prefWidth="75.0" text="Nama Produk" />
+                <TableColumn fx:id="tambahColJenisProduk" prefWidth="75.0" text="Jenis Produk" />
+                  <TableColumn fx:id="tambahColMutuProduk" prefWidth="75.0" text="Mutu Produk" />
+                  <TableColumn fx:id="tambahColTanggalProduksi" prefWidth="75.0" text="Tanggal Produksi" />
+                  <TableColumn fx:id="tambahColTanggalExpired" prefWidth="75.0" text="Tanggal Expired" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <VBox alignment="TOP_CENTER" layoutX="833.0" layoutY="30.0" prefHeight="296.0" prefWidth="228.0">
+               <children>
+                  <ImageView fx:id="tambahShowImageView" fitHeight="179.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btnTambahGambar" mnemonicParsing="false" text="Tambah Gambar">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="833.0" layoutY="300.0" prefHeight="196.0" prefWidth="228.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnTambah" mnemonicParsing="false" prefWidth="200.0" text="Tambah Data">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tambahBtnCancel" mnemonicParsing="false" prefWidth="200.0" text="Cancel">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tambahBtnLogOut" mnemonicParsing="false" prefWidth="200.0" text="Log Out">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></Pane>
+      <Pane fx:id="paneLihat" layoutX="275.0" prefHeight="768.0" prefWidth="1091.0" visible="false">
+         <children>
+            <TableView fx:id="lihatTblViewProduk" layoutX="30.0" layoutY="30.0" prefHeight="710.0" prefWidth="740.0">
+               <columns>
+                  <TableColumn fx:id="lihatColIDProduk" prefWidth="75.0" text="ID Produk" />
+                  <TableColumn fx:id="lihatColNamaProduk" prefWidth="75.0" text="Nama Produk" />
+                  <TableColumn fx:id="lihatColJenisProduk" prefWidth="75.0" text="Jenis Produk" />
+                  <TableColumn fx:id="lihatColMutuProduk" prefWidth="75.0" text="Mutu Produk" />
+                  <TableColumn fx:id="lihatColTanggalProduksi" prefWidth="75.0" text="Tanggal Produksi" />
+                  <TableColumn fx:id="lihatColTanggalExpired" prefWidth="75.0" text="Tanggal Expired" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <VBox alignment="TOP_CENTER" layoutX="833.0" layoutY="30.0" prefHeight="710.0" prefWidth="228.0">
+               <children>
+                  <ImageView fx:id="lihatShowImageView" fitHeight="179.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="paneUbah" layoutX="275.0" prefHeight="768.0" prefWidth="1091.0" visible="false">
+         <children>
+            <VBox layoutX="30.0" layoutY="30.0" prefHeight="339.0" prefWidth="1032.0" spacing="5.0">
+               <children>
+                  <Label text="Nama Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ubahTxtNamaProduk" promptText="Masukkan nama produk" />
+                  <Label text="Jenis Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="ubahCbJenisProduk" prefHeight="26.0" prefWidth="1032.0" />
+                  <Label text="Mutu Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="740.0" spacing="30.0">
+                     <children>
+                        <RadioButton fx:id="ubahRbIndustrial" mnemonicParsing="false" text="Industrial Grade" />
+                        <RadioButton fx:id="ubahRbFood" mnemonicParsing="false" text="Food Additive" />
+                        <RadioButton fx:id="ubahRbPharma" mnemonicParsing="false" text="Pharmaceutical Standard" />
+                        <RadioButton fx:id="ubahRbFeed" mnemonicParsing="false" text="Feed Additive" />
+                     </children>
+                  </HBox>
+                  <Label text="Tanggal Produksi">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="ubahDtProduksi" prefWidth="1032.0" promptText="Pilih tanggal produksi produk" />
+                  <Label text="Tanggal Expired">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="ubahDtExpired" prefWidth="1032.0" promptText="PIlih tanggal expired produk" />
+               </children>
+            </VBox>
+            <TableView fx:id="ubahTblViewProduk" layoutX="30.0" layoutY="516.0" prefHeight="223.0" prefWidth="1032.0">
+               <columns>
+                  <TableColumn fx:id="ubahColIDProduk" prefWidth="75.0" text="ID Produk" />
+                  <TableColumn fx:id="ubahColNamaProduk" prefWidth="75.0" text="Nama Produk" />
+                  <TableColumn fx:id="ubahColJenisProduk" prefWidth="75.0" text="Jenis Produk" />
+                  <TableColumn fx:id="ubahColMutuProduk" prefWidth="75.0" text="Mutu Produk" />
+                  <TableColumn fx:id="ubahColTanggalProduksi" prefWidth="75.0" text="Tanggal Produksi" />
+                  <TableColumn fx:id="ubahColTanggalExpired" prefWidth="75.0" text="Tanggal Expired" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <VBox alignment="CENTER" layoutX="849.0" layoutY="364.0" prefHeight="134.0" prefWidth="228.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnUbah" mnemonicParsing="false" prefWidth="200.0" text="Ubah Data">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ubahBtnCancel" mnemonicParsing="false" prefWidth="200.0" text="Cancel">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ubahBtnLogOut" mnemonicParsing="false" prefWidth="200.0" text="Log Out">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="paneHapus" layoutX="275.0" prefHeight="768.0" prefWidth="1091.0" visible="false">
+         <children>
+            <VBox layoutX="30.0" layoutY="30.0" prefHeight="329.0" prefWidth="1032.0" spacing="5.0">
+               <children>
+                  <Label text="Nama Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hapusTxtNamaProduk" promptText="Masukkan nama produk" />
+                  <Label text="Jenis Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="hapusCbJenisProduk" prefHeight="26.0" prefWidth="1032.0" />
+                  <Label text="Mutu Produk">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="740.0" spacing="30.0">
+                     <children>
+                        <RadioButton fx:id="hapusRbIndustrial" mnemonicParsing="false" text="Industrial Grade" />
+                        <RadioButton fx:id="hapusRbFood" mnemonicParsing="false" text="Food Additive" />
+                        <RadioButton fx:id="hapusRbPharma" mnemonicParsing="false" text="Pharmaceutical Standard" />
+                        <RadioButton fx:id="hapusRbFeed" mnemonicParsing="false" text="Feed Additive" />
+                     </children>
+                  </HBox>
+                  <Label text="Tanggal Produksi">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="hapusDtProduksi" prefWidth="1032.0" promptText="Pilih tanggal produksi produk" />
+                  <Label text="Tanggal Expired">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="hapusDtExpired" prefWidth="1032.0" promptText="PIlih tanggal expired produk" />
+               </children>
+            </VBox>
+            <TableView fx:id="hapusTblViewProduk" layoutX="30.0" layoutY="516.0" prefHeight="223.0" prefWidth="1032.0">
+               <columns>
+                  <TableColumn fx:id="hapusColIDProduk" prefWidth="75.0" text="ID Produk" />
+                  <TableColumn fx:id="hapusColNamaProduk" prefWidth="75.0" text="Nama Produk" />
+                  <TableColumn fx:id="hapusColJenisProduk" prefWidth="75.0" text="Jenis Produk" />
+                  <TableColumn fx:id="hapusColMutuProduk" prefWidth="75.0" text="Mutu Produk" />
+                  <TableColumn fx:id="hapusColTanggalProduksi" prefWidth="75.0" text="Tanggal Produksi" />
+                  <TableColumn fx:id="hapusColTanggalExpired" prefWidth="75.0" text="Tanggal Expired" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <VBox alignment="CENTER" layoutX="848.0" layoutY="364.0" prefHeight="103.0" prefWidth="228.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnHapus" mnemonicParsing="false" prefWidth="200.0" text="Hapus Data">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="hapusBtnCancel" mnemonicParsing="false" prefWidth="200.0" text="Cancel">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="hapusBtnLogOut" mnemonicParsing="false" prefWidth="200.0" text="Log Out">
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="paneAbout" layoutX="285.0" layoutY="10.0" prefHeight="768.0" prefWidth="1091.0" visible="false">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="30.0" prefHeight="700.0" prefWidth="1032.0" spacing="25.0">
+               <children>
+                  <Label text="Shijiazhuang Donghua Jinlong Chemical Co., LTD.">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="578.0" prefWidth="1032.0" text="Glycine comes from here, Shijiazhuang Donghua Jinlong Chemical Co., LTD. (DHJL) was founded in 1979 with professional glycine R&amp;D and production Base.DHJL has more than 1,000 employees. The main products include Industrial grade Glycine (an annual output of 110,000 tons), Refined Glycine (an annual output of 20,000 tons), Hydantoin, 5-Benzylidene Hydantoin, and sodium glycinate, Sodium Glycine Carbonate, Calcium /Magnesium/ Zinc/ Copper/ Manganese/ Iron/ Ferrous Glycinate, and other Glycine derivatives products.DHJL has been committed to the development and research of food additives and fine chemicals for many years, has its own core technology, has obtained 31 patents, and has accumulated rich production experience. On the basis of stable development, we will continue to explore the path of diversification and transformation, and our products cover glycine, glycine trace element chelate, pharmaceutical intermediates, raw materials for cosmetics, feed additives and other fields. DHJL participated in the drafting and formulation of the industry grade standard “Glycine for Industrial Use”, and series of national food safety standards, such as “Food Additive Glycine”, “Food Additive Ferrous Glycinate”, “Food Additive Calcium Glycinate”, “Food Nutrition Enhancer Zinc Glycinate”, and participated in the formulation of my country’s glycine industry standards.DHJL has modern GMP production workshop and equipment, the products strictly follow the FCC/E640/USP/BP/EP/ JSFA production standards, and passed ISO22000, ISO9001, ISO14001, ISO45001, BRC, FAMI-QS, KOSHER, HALAL, REACH and other international certifications. With the increasing innovation capability, stable and excellent production capability and improvement of service ability, DHJL has won the trust of the customers and has built long term relationship with many global top companies.Looking forward to the future, DHJL closely follow the international market, root in technological innovation, devote ourselves to environmental protection, create value for customers, make human beings healthier, and make unremitting efforts for a better life!" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

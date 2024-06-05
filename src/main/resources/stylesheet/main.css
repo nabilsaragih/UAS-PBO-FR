@@ -1,0 +1,34 @@
+.root {
+    -fx-font-family: Poppins;
+    -fx-background-color: #F6F1E9;
+}
+
+#vbMain {
+    -fx-background-color: black;
+}
+
+#panel1 .label, #panel2 .label, #panel3 .label, #panel4 .label, #panel5 .label {
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-font-family: Poppins;
+}
+
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #D3D3D3;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.button {
+    -fx-background-color: #4F200D;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-text-fill: #D3D3D3;
+    -fx-cursor: hand;
+}
